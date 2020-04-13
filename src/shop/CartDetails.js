@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { CardDetailsRows } from './CartDetailsRows';
+import { CartDetailsRows } from './CartDetailsRows';
 
 export class CartDetails extends Component {
 
@@ -21,7 +21,7 @@ export class CartDetails extends Component {
                     </tr>
                 </thead>
                 <tbody>
-                    <CardDetailsRows cart={ this.props.cart }
+                    <CartDetailsRows cart={ this.props.cart }
                         cartPrice={ this.props.cartPrice }
                         updateQuantity={ this.props.updateQuantity }
                         removeFromCart={ this.props.removeFromCart } />
